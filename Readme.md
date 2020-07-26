@@ -6,7 +6,14 @@
 
 Разместите скрипт в `<head>...</head>` вашего сайта
 ```html
-<script src="https://raw.githubusercontent.com/anyxem/get-click-js/master/dist/main.js"></script>
+<!-- START get_clicks -->
+<script>
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'http://anyxem.com/get-click-js/dist/main.js'; // no SSL
+    document.head.appendChild(script);
+</script>
+<!-- END get_clicks -->
 ```
 
 ## Разработка

@@ -1,7 +1,11 @@
+import { getCookie } from './utils/getCookie'
+
 (function get_clicks() {
   const clicks = []; // storing click to this variable
 
-  const gclid = document.cookie._ga || null;
+  window.clicks = clicks;
+
+  const gclid = getCookie('_ga');
   const url = window.location.origin;
 
   /**
